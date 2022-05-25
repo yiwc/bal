@@ -1,0 +1,6 @@
+deprecated
+src
+camera_output
+.vscode
+.pytest_cache
+__*
