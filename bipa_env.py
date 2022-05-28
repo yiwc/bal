@@ -144,13 +144,13 @@ if __name__=="__main__":
     env=bipa_env()
     env.reset()
 
-    # # 3D 视角、交互
-    # while True:
-    #     env.render_human()
-    #     obs,rew,done,info=env.step(env.action_space.sample())
-    #     if done:
-    #         env.reset()
+    # 3D 视角、交互
+    while True:
+        env.render_human()
+        obs,rew,done,info=env.step(env.action_space.sample())
+        if done:
+            env.reset()
             
-    # # 相机视角，会保存图片
-    for i in range(10):
-        env.render_two_camera()
+    # # # 相机视角，会保存图片
+    # for i in range(10):
+    #     env.render_two_camera()
